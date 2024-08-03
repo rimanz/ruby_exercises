@@ -4,13 +4,12 @@ module CaesarCipher
     def CaesarCipher.calculate_index(char, rotation)
         index = ALPHABETS.index(char) + rotation
         if index > 25
-            return index - 26
+            return index % 26
         else
             return index
         end
     end
-    
-    
+        
     def CaesarCipher.caesar_cipher(text, rotation)
         chars = text.split('').map do |ch|
             if ALPHABETS.include? ch
