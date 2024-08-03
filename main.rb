@@ -1,4 +1,4 @@
-require './lib/caesar_cipher'
+require './projects/caesar_cipher'
 
 def run_caesar_cipher 
     puts 'Project: Caesar Cipher'
